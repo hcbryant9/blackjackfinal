@@ -1,8 +1,20 @@
 package com.example.blackjackfinal;
 
-public class Card {
-    enum VALUE { NVAL, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE}
-    enum SUIT { NSUIT,CLUB, DIAMOND, HEART, SPADE }
-    enum RESULT {WIN, LOSS, BLACKJACK, PUSH}
-
+public class Card implements BlackjackFinal{
+    private int val;
+    private char suit;
+    private Card(){
+        suit = ' ';
+        val = 0;
+    }
+    public Card(int val, char suit){
+        this.val = val;
+        this.suit = suit;
+    }
+    public int getVal(int val){
+        return this.val;
+    }
+    public char getSuit(char suit){
+        return this.suit;
+    }
 }
