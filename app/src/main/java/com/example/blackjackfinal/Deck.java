@@ -33,6 +33,7 @@ public class Deck {
             index++;
         }
     }
+    /*shuffle*/
     public void shuffle(Card[] deck){
         Card swap;
         Random random = new Random();
@@ -41,7 +42,10 @@ public class Deck {
             swap = deck[ran];
             deck[ran] = deck[i];
             deck[i] = swap;
-
         }
+    }
+    /*find card method that returns a card at an index*/
+    public Card findCard(int i){
+        return deck[i];
     }
 }
