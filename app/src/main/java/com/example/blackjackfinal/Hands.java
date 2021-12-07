@@ -7,7 +7,6 @@ public class Hands {
     private int size = 0;
     /* the total method will calculate the total
     *  a boolean is required to see if their card is an ace (the val is 1)
-    *
     * */
     public int total(){
         int val;
