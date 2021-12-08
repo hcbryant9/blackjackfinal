@@ -18,7 +18,7 @@ public class Dealer {
         return false;
     }
 
-    /* the brain of the dealer */
+    /* the brain of the dealer test */
     public void dealerBrain(Deck currDeck) {
         int dealerTotal = dealerHand.total();
         while (dealerTotal < 16 ) { /*16 is where a casino dealer is told to hit or not*/
