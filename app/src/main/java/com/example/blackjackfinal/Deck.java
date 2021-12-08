@@ -5,6 +5,7 @@ import java.util.Random;
 public class Deck {
     /*create an array of 52 cards to be the deck*/
     Card[] deck = new Card[52];
+    private int nextCard;
     /*creating the deck like it would be coming out of a new box
     * goes through each suit and creates 13 cards all increasing in value
     * we will be worrying about shuffling later
@@ -33,6 +34,7 @@ public class Deck {
             index++;
         }
     }
+    /*shuffle*/
     public void shuffle(Card[] deck){
         Card swap;
         Random random = new Random();
@@ -41,7 +43,16 @@ public class Deck {
             swap = deck[ran];
             deck[ran] = deck[i];
             deck[i] = swap;
-
         }
+    }
+    /*find card method that returns a card at an index*/
+    public Card findCard(int i){
+        return deck[i];
+    }
+
+    /*next card in the deck*/
+    public Card nextCard(){
+        nextCard++;
+        return deck[nextCard];
     }
 }
