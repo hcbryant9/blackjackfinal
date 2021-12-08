@@ -17,7 +17,7 @@ public class Hands {
             val = hand[i].getVal();
             if(val > 10) {
                 val = 10;
-            } else if ( val == 1){ /*this means it is an ace*/
+            } else if ( val == 1){ /*this means it is anace*/
                 isAce = true;
             }
             total += val;
@@ -27,7 +27,7 @@ public class Hands {
         }
         return total;
     }
-    public void draw(Card card) {
+    public void hit(Card card) {
         size++;
         hand[size] = card;
     }
