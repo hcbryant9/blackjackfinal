@@ -17,7 +17,7 @@ public class Hands {
             val = hand[i].getVal();
             if(val > 10) {
                 val = 10;
-            } else if ( val == 1){ /*this means it is anace*/
+            } else if ( val == 1){ /*this means it is an ace*/
                 isAce = true;
             }
             total += val;
