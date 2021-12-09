@@ -34,7 +34,8 @@ public class Dealer {
         dealerHand.hit(card);
     }
     /*function that clears the dealers hand*/
+    public void dealerClear(){ dealerHand.clear(); }
     /*function that returns the dealers total*/
-
+    public int dealerTotal(){ return dealerHand.total(); }
 }
 
