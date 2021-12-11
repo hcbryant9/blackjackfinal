@@ -35,7 +35,7 @@ public class Deck {
         }
     }
     /*shuffle*/
-    public void shuffle(Card[] deck){
+    public void shuffle(){
         Card swap;
         Random random = new Random();
         for (int i = 0; i < 52; i++){

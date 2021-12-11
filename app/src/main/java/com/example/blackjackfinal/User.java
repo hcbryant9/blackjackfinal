@@ -23,7 +23,7 @@ public class User {
     public void setUserBust(boolean userBust){
         this.userBust = userBust;
     }
-    public boolean setUserBust(){
+    public boolean getUserBust(){
         return this.userBust;
     }
     /*get total*/
