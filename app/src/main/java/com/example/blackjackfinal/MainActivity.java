@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             /*draw*/
         }
         if(user.total() > dealer.total()){
-            /*user wins*/
+            /*user win*/
         } else if (user.total() < dealer.total()){
             /*dealer wins*/
         }
