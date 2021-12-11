@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     public void winner(Hands user, Hands dealer, boolean dealerBust, boolean userBust){
         /*if one person bust or they have the same total*/
         if(userBust && !dealerBust){
-            /*dealer wins*/
+            /*dealer win*/
         } else if (!userBust && dealerBust){
             /*user wins*/
         } else if ((userBust && dealerBust) ||(user.total()==dealer.total()) ){
