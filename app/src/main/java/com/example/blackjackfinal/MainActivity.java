@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
             user.userDraw(deck.nextCard());
             displayCards(userHand);
         }
+
+
         /*logic to see who wins*/
         winner(userHand,dealerHand,dealer.getDealerBust(),user.getUserBust());
     }
