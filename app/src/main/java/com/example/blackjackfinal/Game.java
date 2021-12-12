@@ -37,14 +37,14 @@ public class Game {
     }
     public void blackJack(){
         /*shuffle the deck and then create two Hands -> one for the user and one for the dealer*/
-        deck.shuffle();
+        //deck.shuffle();
         dealerHand = new Hands();
-        dealer.dealerDraw(deck.nextCard());
-        dealer.dealerDraw(deck.nextCard());
+        dealerHand.hit(deck.nextCard());
+        dealerHand.hit(deck.nextCard());
         displayCards(dealerHand);
         userHand = new Hands();
-        user.userDraw(deck.nextCard());
-        user.userDraw(deck.nextCard());
+        userHand.hit(deck.nextCard());
+        userHand.hit(deck.nextCard());
         /*display the cards -> the dealer than goes first -> then ask user to hit or stand*/
         displayCards(userHand);
         dealer.dealerBrain(deck);

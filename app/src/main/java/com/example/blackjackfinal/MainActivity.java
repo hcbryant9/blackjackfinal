@@ -9,15 +9,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    /*
-    public static void main(String [] args) {
-        Game newGame = new Game();
-        newGame.blackJack();
-    }
-    */
+
 
     private Button playBTN;
-
+    private Game newGame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
         //Makes play button respond to a click and if the balance is 0 then it says insufficient funds
         playBTN = findViewById(R.id.playbtn);
         playBTN.setOnClickListener(view -> {
-            /*sends user to play screen*/
             /*plays the game*/
+            newGame = new Game();
+            newGame.blackJack();
         });
         //Makes add funds button respond to a click and bring them to Add funds activity
 
