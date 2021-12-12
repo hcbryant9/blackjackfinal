@@ -47,15 +47,19 @@ public class Game {
         userHand.hit(deck.nextCard());
         /*display the cards -> the dealer than goes first -> then ask user to hit or stand*/
         displayCards(userHand);
-        dealer.dealerBrain(deck);
 
-        if (hitOrStand()){
-            user.userDraw(deck.nextCard());
-            displayCards(userHand);
-        }
+
+
+        //dealer.dealerBrain(deck);
+
+        //if (hitOrStand()){
+            //user.userDraw(deck.nextCard());
+            //displayCards(userHand);
+        //}
 
 
         /*logic to see who wins*/
-        winner(userHand,dealerHand,dealer.getDealerBust(),user.getUserBust());
+        //winner(userHand,dealerHand,dealer.getDealerBust(),user.getUserBust());
+
     }
 }

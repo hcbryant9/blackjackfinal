@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         //Makes play button respond to a click and if the balance is 0 then it says insufficient funds
         playBTN = findViewById(R.id.playbtn);
         playBTN.setOnClickListener(view -> {
+            /*makes "playBTN" invisible*/
+            playBTN.setVisibility(View.GONE);
             /*plays the game*/
             newGame = new Game();
             newGame.blackJack();
