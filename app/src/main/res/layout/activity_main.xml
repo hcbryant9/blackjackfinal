@@ -19,4 +19,136 @@
         android:visibility="visible"
         app:icon="@android:drawable/btn_star" />
 
+    <ImageView
+        android:id="@+id/cardback1a"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback1b"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback1c"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback1d"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback1e"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback2a"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback2b"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback2c"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback2d"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <ImageView
+        android:id="@+id/cardback2e"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+    <Button
+        android:id="@+id/hitbtn"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="425dp"
+        android:background="@color/purple_500"
+        android:text="@string/hit"
+        android:visibility="invisible"
+        app:icon="@android:drawable/btn_star" />
+
+    <Button
+        android:id="@+id/standbtn"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="425dp"
+        android:background="@color/purple_500"
+        android:text="@string/stand"
+        android:visibility="invisible"
+        app:icon="@android:drawable/btn_star" />
+
 </RelativeLayout>
