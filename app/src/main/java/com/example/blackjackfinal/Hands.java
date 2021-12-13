@@ -32,8 +32,8 @@ public class Hands {
         return this.size;
     }
     public void hit(Card card) {
-        size++;
         hand[size] = card;
+        size++;
     }
     public Card find(int index){
         return hand[index];

@@ -1,7 +1,10 @@
 package com.example.blackjackfinal;
 
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -64,10 +67,9 @@ public class Game extends AppCompatActivity {
     private ImageView kingspade;
     private ImageView kingdiamond;
     private ImageView kingclub;
+    //private TextView theTextView;
 
 
-    public Game() {
-    }
 
     public void winner(Hands user, Hands dealer, boolean dealerBust, boolean userBust) {
         /*if one person bust or they have the same total*/
@@ -99,173 +101,31 @@ public class Game extends AppCompatActivity {
         int i;
         int val;
         char suit;
-        //for (i = 0; i<hand.getSize();i++){
         val = hand.find(1).getVal();
         suit = hand.find(1).getSuit();
-        switch(val){
-            case 0: switch (suit){
-                case 's': acespade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': aceclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': acediamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': aceheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 1: switch (suit){
-                case 's': twospade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': twoclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': twodiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': twoheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 2: switch (suit){
-                case 's': threespade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': threeclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': threediamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': threeheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 3: switch (suit){
-                case 's': fourspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': fourclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': fourdiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': fourheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 4: switch (suit){
-                case 's': fivespade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': fiveclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': fivediamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': fiveheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 5: switch (suit){
-                case 's': sixspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': sixclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': sixdiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': sixheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 6: switch (suit){
-                case 's': sevenspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': sevenclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': sevendiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': sevenheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 7: switch (suit){
-                case 's': eightspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': eightclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': eightdiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': eightheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 8: switch (suit){
-                case 's': ninespade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': nineclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': ninediamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': nineheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 9: switch(suit){
-                case 's': tenspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': tenclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': tendiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': tenheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 10: switch (suit){
-                case 's': jackspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': jackclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': jackdiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': jackheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 11: switch (suit){
-                case 's': queenspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': queenclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': queendiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': queenheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-            case 12: switch (suit){
-                case 's': kingspade.setVisibility(View.VISIBLE);
-                    break;
-                case 'c': kingclub.setVisibility(View.VISIBLE);
-                    break;
-                case 'd': kingdiamond.setVisibility(View.VISIBLE);
-                    break;
-                case 'h': kingheart.setVisibility(View.VISIBLE);
-                    break;
-            }
-                break;
-        }
-        //}
+
     }
     public void blackJack(){
+
         /*shuffle the deck and then create two Hands -> one for the user and one for the dealer*/
         //deck.shuffle();
         dealerHand = new Hands();
-        //dealerHand.hit(deck.nextCard());
-        //dealerHand.hit(deck.nextCard());
+        dealerHand.hit(deck.nextCard());
+        dealerHand.hit(deck.nextCard());
+
+        //ImageView jackdiamond2 = findViewById(R.id.jackdiamond);
         //displayCards(dealerHand,false);
-        dealer.dealerDraw(deck.nextCard());
-        dealer.dealerDraw(deck.nextCard());
-        userHand = new Hands();
-        user.userDraw(deck.nextCard());
-        user.userDraw(deck.nextCard());
+
+        //dealer.dealerDraw(deck.nextCard());
+        //dealer.dealerDraw(deck.nextCard());
+        //userHand = new Hands();
+        //user.userDraw(deck.nextCard());
+        //user.userDraw(deck.nextCard());
         //userHand.hit(deck.nextCard());
         //userHand.hit(deck.nextCard());
 
         /*display the cards -> the dealer than goes first -> then ask user to hit or stand*/
-        displayCards(dealerHand,false);
+        //displayCards(dealerHand,false);
 
 
 

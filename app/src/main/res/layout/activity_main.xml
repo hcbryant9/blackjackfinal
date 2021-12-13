@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -126,6 +127,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/cardback" />
+
     <ImageView
         android:id="@+id/cardback2e"
         android:layout_width="70dp"
@@ -171,6 +173,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/acespade" />
+
     <ImageView
         android:id="@+id/aceclub"
         android:layout_width="70dp"
@@ -182,6 +185,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/aceclub" />
+
     <ImageView
         android:id="@+id/acediamond"
         android:layout_width="70dp"
@@ -193,6 +197,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/acediamond" />
+
     <ImageView
         android:id="@+id/aceheart"
         android:layout_width="70dp"
@@ -204,6 +209,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/aceheart" />
+
     <ImageView
         android:id="@+id/twoheart"
         android:layout_width="70dp"
@@ -215,6 +221,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/twoheart" />
+
     <ImageView
         android:id="@+id/twodiamond"
         android:layout_width="70dp"
@@ -226,6 +233,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/twodiamond" />
+
     <ImageView
         android:id="@+id/twospade"
         android:layout_width="70dp"
@@ -237,6 +245,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/twospade" />
+
     <ImageView
         android:id="@+id/twoclub"
         android:layout_width="70dp"
@@ -248,6 +257,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/twoclub" />
+
     <ImageView
         android:id="@+id/threediamond"
         android:layout_width="70dp"
@@ -259,6 +269,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/threediamond" />
+
     <ImageView
         android:id="@+id/threeclub"
         android:layout_width="70dp"
@@ -270,6 +281,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/threeclub" />
+
     <ImageView
         android:id="@+id/threespade"
         android:layout_width="70dp"
@@ -281,6 +293,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/threespade" />
+
     <ImageView
         android:id="@+id/threeheart"
         android:layout_width="70dp"
@@ -292,6 +305,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/threeheart" />
+
     <ImageView
         android:id="@+id/fourclub"
         android:layout_width="70dp"
@@ -303,6 +317,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fourclub" />
+
     <ImageView
         android:id="@+id/fourspade"
         android:layout_width="70dp"
@@ -314,6 +329,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fourspade" />
+
     <ImageView
         android:id="@+id/fourdiamond"
         android:layout_width="70dp"
@@ -325,6 +341,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fourdiamond" />
+
     <ImageView
         android:id="@+id/fourheart"
         android:layout_width="70dp"
@@ -336,6 +353,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fourheart" />
+
     <ImageView
         android:id="@+id/fivespade"
         android:layout_width="70dp"
@@ -347,6 +365,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fivespade" />
+
     <ImageView
         android:id="@+id/fivediamond"
         android:layout_width="70dp"
@@ -358,6 +377,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fivediamond" />
+
     <ImageView
         android:id="@+id/fiveclub"
         android:layout_width="70dp"
@@ -369,6 +389,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fiveclub" />
+
     <ImageView
         android:id="@+id/fiveheart"
         android:layout_width="70dp"
@@ -380,6 +401,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/fiveheart" />
+
     <ImageView
         android:id="@+id/sixspade"
         android:layout_width="70dp"
@@ -391,6 +413,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sixspade" />
+
     <ImageView
         android:id="@+id/sixclub"
         android:layout_width="70dp"
@@ -402,6 +425,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sixclub" />
+
     <ImageView
         android:id="@+id/sixheart"
         android:layout_width="70dp"
@@ -413,6 +437,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sixheart" />
+
     <ImageView
         android:id="@+id/sixdiamond"
         android:layout_width="70dp"
@@ -424,6 +449,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sixdiamond" />
+
     <ImageView
         android:id="@+id/sevenspade"
         android:layout_width="70dp"
@@ -435,6 +461,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sevenspade" />
+
     <ImageView
         android:id="@+id/sevenclub"
         android:layout_width="70dp"
@@ -446,6 +473,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sevenclub" />
+
     <ImageView
         android:id="@+id/sevendiamond"
         android:layout_width="70dp"
@@ -457,6 +485,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sevendiamond" />
+
     <ImageView
         android:id="@+id/sevenheart"
         android:layout_width="70dp"
@@ -468,6 +497,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/sevenheart" />
+
     <ImageView
         android:id="@+id/eightspade"
         android:layout_width="70dp"
@@ -479,6 +509,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/eightspade" />
+
     <ImageView
         android:id="@+id/eightclub"
         android:layout_width="70dp"
@@ -490,6 +521,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/eightclub" />
+
     <ImageView
         android:id="@+id/eightdiamond"
         android:layout_width="70dp"
@@ -501,6 +533,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/eightdiamond" />
+
     <ImageView
         android:id="@+id/eightheart"
         android:layout_width="70dp"
@@ -512,6 +545,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/eightheart" />
+
     <ImageView
         android:id="@+id/ninespade"
         android:layout_width="70dp"
@@ -523,6 +557,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/ninespade" />
+
     <ImageView
         android:id="@+id/nineclub"
         android:layout_width="70dp"
@@ -534,6 +569,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/nineclub" />
+
     <ImageView
         android:id="@+id/nineheart"
         android:layout_width="70dp"
@@ -545,6 +581,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/nineheart" />
+
     <ImageView
         android:id="@+id/ninediamond"
         android:layout_width="70dp"
@@ -556,6 +593,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/ninediamond" />
+
     <ImageView
         android:id="@+id/tenspade"
         android:layout_width="70dp"
@@ -567,6 +605,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/tenspade" />
+
     <ImageView
         android:id="@+id/tenclub"
         android:layout_width="70dp"
@@ -578,6 +617,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/tenclub" />
+
     <ImageView
         android:id="@+id/tendiamond"
         android:layout_width="70dp"
@@ -589,6 +629,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/tendiamond" />
+
     <ImageView
         android:id="@+id/tenheart"
         android:layout_width="70dp"
@@ -600,6 +641,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/tenheart" />
+
     <ImageView
         android:id="@+id/jackclub"
         android:layout_width="70dp"
@@ -611,6 +653,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/jackclub" />
+
     <ImageView
         android:id="@+id/jackspade"
         android:layout_width="70dp"
@@ -622,6 +665,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/jackspade" />
+
     <ImageView
         android:id="@+id/jackheart"
         android:layout_width="70dp"
@@ -633,6 +677,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/jackheart" />
+
     <ImageView
         android:id="@+id/jackdiamond"
         android:layout_width="70dp"
@@ -644,6 +689,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/jackdiamond" />
+
     <ImageView
         android:id="@+id/queenclub"
         android:layout_width="70dp"
@@ -655,6 +701,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/queenclub" />
+
     <ImageView
         android:id="@+id/queenspade"
         android:layout_width="70dp"
@@ -666,6 +713,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/queenspade" />
+
     <ImageView
         android:id="@+id/queenheart"
         android:layout_width="70dp"
@@ -677,6 +725,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/queenheart" />
+
     <ImageView
         android:id="@+id/queendiamond"
         android:layout_width="70dp"
@@ -688,6 +737,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/queendiamond" />
+
     <ImageView
         android:id="@+id/kingclub"
         android:layout_width="70dp"
@@ -699,6 +749,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/kingclub" />
+
     <ImageView
         android:id="@+id/kingspade"
         android:layout_width="70dp"
@@ -710,6 +761,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/kingspade" />
+
     <ImageView
         android:id="@+id/kingdiamond"
         android:layout_width="70dp"
@@ -721,6 +773,7 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/kingdiamond" />
+
     <ImageView
         android:id="@+id/kingheart"
         android:layout_width="70dp"
@@ -732,4 +785,10 @@
         android:contentDescription="@string/todo"
         android:visibility="invisible"
         app:srcCompat="@drawable/kingheart" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:text="TextView" />
 </RelativeLayout>
