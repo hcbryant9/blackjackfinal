@@ -12,16 +12,7 @@ public class Game extends AppCompatActivity {
     private Hands dealerHand;
     private Hands userHand;
 
-    private ImageView Card1a;
-    private ImageView Card1b;
-    private ImageView Card1c;
-    private ImageView Card1d;
-    private ImageView Card1e;
-    private ImageView Card2a;
-    private ImageView Card2b;
-    private ImageView Card2c;
-    private ImageView Card2d;
-    private ImageView Card2e;
+
     private ImageView aceclub = findViewById(R.id.aceclub);
     private ImageView acespade = findViewById(R.id.acespade);
     private ImageView acediamond = findViewById(R.id.acediamond);
@@ -107,9 +98,9 @@ public class Game extends AppCompatActivity {
         int i;
         int val;
         char suit;
-        for (i = 0; i<hand.getSize();i++){
-            val = hand.find(i).getVal();
-            suit = hand.find(i).getSuit();
+        //for (i = 0; i<hand.getSize();i++){
+            val = hand.find(1).getVal();
+            suit = hand.find(1).getSuit();
             switch(val){
                 case 0: switch (suit){
                     case 's': acespade.setVisibility(View.VISIBLE);
@@ -255,7 +246,7 @@ public class Game extends AppCompatActivity {
                 }
                     break;
             }
-        }
+        //}
     }
     public void blackJack(){
         /*shuffle the deck and then create two Hands -> one for the user and one for the dealer*/
@@ -263,12 +254,12 @@ public class Game extends AppCompatActivity {
         dealerHand = new Hands();
         dealerHand.hit(deck.nextCard());
         dealerHand.hit(deck.nextCard());
-        displayCards(dealerHand,false);
+        //displayCards(dealerHand,false);
         userHand = new Hands();
         userHand.hit(deck.nextCard());
         userHand.hit(deck.nextCard());
         /*display the cards -> the dealer than goes first -> then ask user to hit or stand*/
-        displayCards(userHand,true);
+        //displayCards(userHand,true);
 
 
 
