@@ -790,5 +790,13 @@
         android:id="@+id/textView1"
         android:layout_width="136dp"
         android:layout_height="58dp"
-        android:text="TextView" />
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="660dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#230A0A"
+        android:text="test"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp" />
 </RelativeLayout>

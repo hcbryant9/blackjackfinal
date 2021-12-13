@@ -2,7 +2,7 @@ package com.example.blackjackfinal;
 
 public class Hands {
     /*each player will have a card array as their hand the max size of a players hand is 11*/
-    private Card[] hand = new Card[11];
+    private Card[] hand = new Card[5];
     /*the size variable shows how many cards are currently in their hand*/
     private int size = 0;
     /* the total method will calculate the total

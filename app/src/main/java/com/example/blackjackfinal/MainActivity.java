@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
         standBTN = findViewById(R.id.standbtn);
         hitBTN = findViewById(R.id.hitbtn);
         Card1a = findViewById(R.id.cardback1a);
-        theTextView = findViewById(R.id.textView1);
+
 
         Card1b = findViewById(R.id.cardback1b);
         Card2a = findViewById(R.id.cardback2a);
         Card2b = findViewById(R.id.cardback2b);
-        /*
+
         Card1c = findViewById(R.id.cardback1c);
         Card1d = findViewById(R.id.cardback1d);
         Card1e = findViewById(R.id.cardback1e);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         Card2c = findViewById(R.id.cardback2c);
         Card2d = findViewById(R.id.cardback2d);
         Card2e = findViewById(R.id.cardback2e);
-         */
+
         playBTN.setOnClickListener(view -> {
             /*makes "playBTN" invisible*/
             playBTN.setVisibility(View.GONE);
@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             Card1b.setVisibility(View.VISIBLE);
             Card2a.setVisibility(View.VISIBLE);
             Card2b.setVisibility(View.VISIBLE);
+
             //Card1b.setImageResource(R.drawable.aceclub);
             //Card2a.setImageResource(R.drawable.jackclub);
             //Card2b.setImageResource(R.drawable.twoclub);
@@ -88,11 +89,48 @@ public class MainActivity extends AppCompatActivity {
             display(userHand.find(0),Card2a);
             userHand.hit(deck.nextCard());
             display(userHand.find(1),Card2b);
+            showTotal(userHand);
+
+        });
+
+        hitBTN.setOnClickListener(view->{
+            if(userHand.getSize()==2 && userHand.total()!=21){
+                userHand.hit(deck.nextCard());
+                Card2c.setVisibility(View.VISIBLE);
+                display(userHand.find(2),Card2c);
+                showTotal(userHand);
+                if(userHand.total()>21){
+                    /*loss*/
+                }
+            } else if(userHand.getSize()==3 && userHand.total()!=21){
+                userHand.hit(deck.nextCard());
+                Card2d.setVisibility(View.VISIBLE);
+                display(userHand.find(3),Card2d);
+                showTotal(userHand);
+                if(userHand.total()>21){
+                    /*loss*/
+                }
+            } else if(userHand.getSize()==4 && userHand.total()!=21){
+                userHand.hit(deck.nextCard());
+                Card2e.setVisibility(View.VISIBLE);
+                display(userHand.find(4),Card2e);
+                showTotal(userHand);
+                if(userHand.total()>21){
+                    /*loss*/
+                }
+            }
         });
 
 
-
     }
+
+    public void showTotal(Hands hand){
+        String message = ("total: "+hand.total());
+        theTextView = findViewById(R.id.textView1);
+        theTextView.setText(message);
+    }
+
+
     public void display(Card card, ImageView Card1b){
         int val = card.getVal();
         char suit = card.getSuit();
