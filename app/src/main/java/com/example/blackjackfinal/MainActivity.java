@@ -28,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
     private ImageView Card2d;
     private ImageView Card2e;
     private TextView theTextView;
-
+    private Deck deck = new Deck();
+    private User user = new User();
+    private Dealer dealer = new Dealer();
+    private Hands dealerHand;
+    private Hands userHand;
+    private ImageView setter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,14 +69,234 @@ public class MainActivity extends AppCompatActivity {
             Card1b.setVisibility(View.VISIBLE);
             Card2a.setVisibility(View.VISIBLE);
             Card2b.setVisibility(View.VISIBLE);
-            Card1b.setImageResource(R.drawable.aceclub);
-            Card2a.setImageResource(R.drawable.jackclub);
-            Card2b.setImageResource(R.drawable.twoclub);
+            //Card1b.setImageResource(R.drawable.aceclub);
+            //Card2a.setImageResource(R.drawable.jackclub);
+            //Card2b.setImageResource(R.drawable.twoclub);
 
             /*plays the game*/
-            newGame = new Game();
-            newGame.blackJack();
+            //newGame = new Game();
+            //newGame.blackJack();
+            int val;
+            char suit;
+            deck.shuffle();
+            dealerHand = new Hands();
+            dealerHand.hit(deck.nextCard());
+            dealerHand.hit(deck.nextCard());
+            val = dealerHand.find(1).getVal();
+            suit = dealerHand.find(1).getSuit();
 
+            switch(val){
+                case 1: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.acespade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.aceclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.acediamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.aceheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 2: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.twospade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.twoclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.twodiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.twoheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 3: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.threespade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.threeclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.threediamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.threeheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 4: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.fourspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.fourclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.fourdiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.fourheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 5: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.fivespade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.fiveclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.fivediamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.fiveheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 6: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.sixspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.sixclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.sixdiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.sixheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 7: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.sevenspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.sevenclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.sevendiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.sevenheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 8: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.eightspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.eightclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.eightdiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.eightheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 9: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.ninespade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.nineclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.ninediamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.nineheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 10: switch(suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.tenspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.tenclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.tendiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.tenheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 11: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.jackspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.jackclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.jackdiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.jackheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 12: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.queenspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.queenclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.queendiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.queenheart);
+                        break;
+                    default:
+                }
+                    break;
+                case 13: switch (suit){
+                    case 's':
+                        Card1b.setImageResource(R.drawable.kingspade);
+                        break;
+                    case 'c':
+                        Card1b.setImageResource(R.drawable.kingclub);
+                        break;
+                    case 'd':
+                        Card1b.setImageResource(R.drawable.kingdiamond);
+                        break;
+                    case 'h':
+                        Card1b.setImageResource(R.drawable.kingheart);
+                        break;
+                    default:
+                }
+                    break;
+                default:
+
+            }
         });
         //Makes add funds button respond to a click and bring them to Add funds activity
 

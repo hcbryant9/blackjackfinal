@@ -112,7 +112,7 @@ public class Game extends AppCompatActivity {
         dealerHand = new Hands();
         dealerHand.hit(deck.nextCard());
         dealerHand.hit(deck.nextCard());
-
+        deck.shuffle();
         //ImageView jackdiamond2 = findViewById(R.id.jackdiamond);
         //displayCards(dealerHand,false);
 
