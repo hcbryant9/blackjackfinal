@@ -8,6 +8,7 @@ public class Hands {
     /* the total method will calculate the total
     *  a boolean is required to see if their card is an ace (the val is 1)
     * */
+
     public int total(){
         int val;
         int total = 0;
@@ -27,9 +28,15 @@ public class Hands {
         }
         return total;
     }
+    public int getSize(){
+        return this.size;
+    }
     public void hit(Card card) {
         size++;
         hand[size] = card;
+    }
+    public Card find(int index){
+        return hand[index];
     }
     public void clear(){
         size = 0;

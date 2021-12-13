@@ -32,8 +32,14 @@ public class Game {
          * */
         return true;
     }
-    public void displayCards(Hands hand){
-        /*display that hand*/
+    public void displayCards(Hands hand, boolean isUser){
+        int i;
+        int val;
+        char suit;
+        for (i = 0; i<hand.getSize();i++){
+            val = hand.find(i).getVal();
+            suit = hand.find(i).getSuit();
+        }
     }
     public void blackJack(){
         /*shuffle the deck and then create two Hands -> one for the user and one for the dealer*/
@@ -41,12 +47,12 @@ public class Game {
         dealerHand = new Hands();
         dealerHand.hit(deck.nextCard());
         dealerHand.hit(deck.nextCard());
-        displayCards(dealerHand);
+        displayCards(dealerHand,false);
         userHand = new Hands();
         userHand.hit(deck.nextCard());
         userHand.hit(deck.nextCard());
         /*display the cards -> the dealer than goes first -> then ask user to hit or stand*/
-        displayCards(userHand);
+        displayCards(userHand,true);
 
 
 
