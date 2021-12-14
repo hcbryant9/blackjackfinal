@@ -15,27 +15,27 @@ public class Deck {
         int index = 0;
         /*loop for diamonds*/
         for (int i = 1; i<=13; i++){
-            deck[index] = new Card(i,'D');
+            deck[index] = new Card(i,'d');
             index++;
         }
         /*loop for club*/
         for (int i = 1; i<=13; i++){
-            deck[index] = new Card(i,'C');
+            deck[index] = new Card(i,'c');
             index++;
         }
         /*loop for hearts*/
         for (int i = 1; i<=13; i++){
-            deck[index] = new Card(i,'H');
+            deck[index] = new Card(i,'h');
             index++;
         }
         /*loop for spades*/
         for (int i = 1; i<=13; i++){
-            deck[index] = new Card(i,'S');
+            deck[index] = new Card(i,'s');
             index++;
         }
     }
-    /*shuffle*/
-    public void shuffle(Card[] deck){
+
+    public void shuffle(){
         Card swap;
         Random random = new Random();
         for (int i = 0; i < 52; i++){
@@ -45,10 +45,7 @@ public class Deck {
             deck[i] = swap;
         }
     }
-    /*find card method that returns a card at an index*/
-    public Card findCard(int i){
-        return deck[i];
-    }
+
 
     /*next card in the deck*/
     public Card nextCard(){

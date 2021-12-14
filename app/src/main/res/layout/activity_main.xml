@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -10,23 +11,792 @@
 
     <Button
         android:id="@+id/playbtn"
-        android:layout_width="100dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="424dp"
-        android:text="none"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/purple_500"
+        android:text="@string/play"
         android:visibility="visible"
-        android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:icon="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/cardback1a"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback1b"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback1c"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback1d"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback1e"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback2a"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback2b"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback2c"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback2d"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/cardback2e"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cardback" />
 
     <Button
-        android:id="@+id/addFundsBTN"
-        android:layout_width="122dp"
-        android:layout_height="616dp"
-        android:background="@android:color/transparent"
-        android:text="none"
-        android:visibility="visible"
+        android:id="@+id/hitbtn"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="425dp"
+        android:background="@color/purple_500"
+        android:text="@string/hit"
+        android:visibility="invisible"
+        app:icon="@android:drawable/btn_star" />
 
-        />
+    <Button
+        android:id="@+id/standbtn"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="425dp"
+        android:background="@color/purple_500"
+        android:text="@string/stand"
+        android:visibility="invisible"
+        app:icon="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/acespade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/acespade" />
+
+    <ImageView
+        android:id="@+id/aceclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/aceclub" />
+
+    <ImageView
+        android:id="@+id/acediamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/acediamond" />
+
+    <ImageView
+        android:id="@+id/aceheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/aceheart" />
+
+    <ImageView
+        android:id="@+id/twoheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/twoheart" />
+
+    <ImageView
+        android:id="@+id/twodiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/twodiamond" />
+
+    <ImageView
+        android:id="@+id/twospade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/twospade" />
+
+    <ImageView
+        android:id="@+id/twoclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/twoclub" />
+
+    <ImageView
+        android:id="@+id/threediamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/threediamond" />
+
+    <ImageView
+        android:id="@+id/threeclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/threeclub" />
+
+    <ImageView
+        android:id="@+id/threespade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/threespade" />
+
+    <ImageView
+        android:id="@+id/threeheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/threeheart" />
+
+    <ImageView
+        android:id="@+id/fourclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fourclub" />
+
+    <ImageView
+        android:id="@+id/fourspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fourspade" />
+
+    <ImageView
+        android:id="@+id/fourdiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fourdiamond" />
+
+    <ImageView
+        android:id="@+id/fourheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fourheart" />
+
+    <ImageView
+        android:id="@+id/fivespade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fivespade" />
+
+    <ImageView
+        android:id="@+id/fivediamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fivediamond" />
+
+    <ImageView
+        android:id="@+id/fiveclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fiveclub" />
+
+    <ImageView
+        android:id="@+id/fiveheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fiveheart" />
+
+    <ImageView
+        android:id="@+id/sixspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sixspade" />
+
+    <ImageView
+        android:id="@+id/sixclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sixclub" />
+
+    <ImageView
+        android:id="@+id/sixheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sixheart" />
+
+    <ImageView
+        android:id="@+id/sixdiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sixdiamond" />
+
+    <ImageView
+        android:id="@+id/sevenspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sevenspade" />
+
+    <ImageView
+        android:id="@+id/sevenclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sevenclub" />
+
+    <ImageView
+        android:id="@+id/sevendiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sevendiamond" />
+
+    <ImageView
+        android:id="@+id/sevenheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sevenheart" />
+
+    <ImageView
+        android:id="@+id/eightspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eightspade" />
+
+    <ImageView
+        android:id="@+id/eightclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eightclub" />
+
+    <ImageView
+        android:id="@+id/eightdiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eightdiamond" />
+
+    <ImageView
+        android:id="@+id/eightheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eightheart" />
+
+    <ImageView
+        android:id="@+id/ninespade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ninespade" />
+
+    <ImageView
+        android:id="@+id/nineclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/nineclub" />
+
+    <ImageView
+        android:id="@+id/nineheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/nineheart" />
+
+    <ImageView
+        android:id="@+id/ninediamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ninediamond" />
+
+    <ImageView
+        android:id="@+id/tenspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tenspade" />
+
+    <ImageView
+        android:id="@+id/tenclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tenclub" />
+
+    <ImageView
+        android:id="@+id/tendiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tendiamond" />
+
+    <ImageView
+        android:id="@+id/tenheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tenheart" />
+
+    <ImageView
+        android:id="@+id/jackclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/jackclub" />
+
+    <ImageView
+        android:id="@+id/jackspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/jackspade" />
+
+    <ImageView
+        android:id="@+id/jackheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/jackheart" />
+
+    <ImageView
+        android:id="@+id/jackdiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/jackdiamond" />
+
+    <ImageView
+        android:id="@+id/queenclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/queenclub" />
+
+    <ImageView
+        android:id="@+id/queenspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/queenspade" />
+
+    <ImageView
+        android:id="@+id/queenheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/queenheart" />
+
+    <ImageView
+        android:id="@+id/queendiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/queendiamond" />
+
+    <ImageView
+        android:id="@+id/kingclub"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kingclub" />
+
+    <ImageView
+        android:id="@+id/kingspade"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kingspade" />
+
+    <ImageView
+        android:id="@+id/kingdiamond"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kingdiamond" />
+
+    <ImageView
+        android:id="@+id/kingheart"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kingheart" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="660dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#230A0A"
+        android:text="test"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp" />
 </RelativeLayout>

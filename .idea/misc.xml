@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/18046/AndroidStudioProjects/blackjackfinal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/18046/AndroidStudioProjects/blackjackfinal/app/src/main/res/drawable/ic_launcher_andriodappplay.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/18046/AndroidStudioProjects/blackjackfinal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/18046/AndroidStudioProjects/blackjackfinal/app/src/main/res/layout/activity_add_funds.xml" value="0.2390625" />
-        <entry key="..\:/Users/18046/AndroidStudioProjects/blackjackfinal/app/src/main/res/layout/activity_main.xml" value="0.268" />
+        <entry key="..\:/Users/18046/AndroidStudioProjects/blackjackfinal/app/src/main/res/layout/activity_main.xml" value="0.3" />
       </map>
     </option>
   </component>

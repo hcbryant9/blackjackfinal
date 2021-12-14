@@ -2,12 +2,13 @@ package com.example.blackjackfinal;
 
 public class Hands {
     /*each player will have a card array as their hand the max size of a players hand is 11*/
-    private Card[] hand = new Card[11];
+    private Card[] hand = new Card[5];
     /*the size variable shows how many cards are currently in their hand*/
     private int size = 0;
     /* the total method will calculate the total
     *  a boolean is required to see if their card is an ace (the val is 1)
     * */
+
     public int total(){
         int val;
         int total = 0;
@@ -27,9 +28,15 @@ public class Hands {
         }
         return total;
     }
+    public int getSize(){
+        return this.size;
+    }
     public void hit(Card card) {
-        size++;
         hand[size] = card;
+        size++;
+    }
+    public Card find(int index){
+        return hand[index];
     }
     public void clear(){
         size = 0;
