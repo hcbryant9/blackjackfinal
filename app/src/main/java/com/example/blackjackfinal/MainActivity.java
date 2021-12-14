@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button playBTN;
     private Button standBTN;
     private Button hitBTN;
-    private Game newGame;
+
     private ImageView Card1a;
     private ImageView Card1b;
     private ImageView Card1c;
@@ -99,25 +99,25 @@ public class MainActivity extends AppCompatActivity {
                 Card2c.setVisibility(View.VISIBLE);
                 display(userHand.find(2),Card2c);
                 showTotal(userHand);
-                if(userHand.total()>21){
+                //if(userHand.total()>21){
                     /*loss*/
-                }
+                //}
             } else if(userHand.getSize()==3 && userHand.total()!=21){
                 userHand.hit(deck.nextCard());
                 Card2d.setVisibility(View.VISIBLE);
                 display(userHand.find(3),Card2d);
                 showTotal(userHand);
-                if(userHand.total()>21){
+                //if(userHand.total()>21){
                     /*loss*/
-                }
+                //}
             } else if(userHand.getSize()==4 && userHand.total()!=21){
                 userHand.hit(deck.nextCard());
                 Card2e.setVisibility(View.VISIBLE);
                 display(userHand.find(4),Card2e);
                 showTotal(userHand);
-                if(userHand.total()>21){
+                //if(userHand.total()>21){
                     /*loss*/
-                }
+                //}
             }
         });
 
